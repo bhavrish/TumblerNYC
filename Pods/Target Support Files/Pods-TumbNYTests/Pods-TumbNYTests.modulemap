@@ -1,0 +1,6 @@
+framework module Pods_TumbNYTests {
+  umbrella header "Pods-TumbNYTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
