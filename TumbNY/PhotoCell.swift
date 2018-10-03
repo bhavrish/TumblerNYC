@@ -11,6 +11,8 @@ import UIKit
 class PhotoCell: UITableViewCell {
 
     
+    @IBOutlet weak var tumblrimageView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

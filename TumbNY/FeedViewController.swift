@@ -62,7 +62,10 @@ class FeedViewController: UIViewController, UITableViewDataSource {
             let originalSize = photo["original_size"] as! [String: Any]
             let urlString = originalSize["url"] as! String
             let url = URL(string: urlString)
-            //cell.tumblrimageView.af_setImage(withURL: url!)
+            cell.tumblrImageView.af_setImage(withURL: url!)
+
+
+
         }
         
         return cell
