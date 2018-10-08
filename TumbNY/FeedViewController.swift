@@ -64,11 +64,23 @@ class FeedViewController: UIViewController, UITableViewDataSource {
             let url = URL(string: urlString)
             cell.tumblrimageView.af_setImage(withURL: url!)
 
-
-
         }
         
         return cell
+    }
+    
+    // Get rid of gray area after clicking cell
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableview.indexPath(for: cell) {
+            let post = posts[indexPath.row]
+            let detailViewController = segue.destination as! PhotoDetailsViewController
+            detailViewController.post = post
+        }
     }
     
     override func didReceiveMemoryWarning() {
