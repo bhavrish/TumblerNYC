@@ -41,6 +41,11 @@ class PhotoDetailsViewController: UIViewController {
             
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detailViewController = segue.destination as! FullScreenPhotoViewController
+        detailViewController.post = post
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
