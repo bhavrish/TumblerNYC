@@ -1,40 +1,40 @@
-# Lab 1 - *TumbNY*
+# Lab 2 - *TumbNY*
 
-**TumbNY** is a photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
+**TumbNY** is a photo browsing app app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
-Time spent: **4** hours spent in total
+Time spent: **2** hours spent in total
 
 ## User Stories
 
 The following **required** user stories are complete:
 
-- [x] User can scroll through a feed of images returned from the Tumblr API (5pts)
+- [x] User can tab an image to view a larger image in a detail view (5pts)
 
 The following **stretch** user stories are implemented:
 
-- [ ] User sees an alert when there's a networking error (+1pt)
-- [ ] While poster is being fetched, user see's a placeholder image (+1pt)
-- [ ] User sees image transition for images coming from network, not when it is loaded from cache (+1pt)
-- [ ] Customize the selection effect of the cell (+1pt)
+- [ ] Add Avatar and Publish Dates (+2pt)
+- [x] Zoomable Photo View (+2pt)
+- [ ] Infinite Scrolling (+2pt)
 
 The following **additional** user stories are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality! (+1-3pts)
+I can add infinite scrolling to improve my ap functionality.
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. Is it possible to load videos into the app, and if so, which library needs to be used? 
-2. A way this app could be extended is through allowing the user to click the image to get the story behind the person.
+1. What is the difference between a view and a view controller?
+2. I could add infinite scrolling to extend my app.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<a href="https://imgflip.com/gif/2jcbqn"><img src="https://i.imgflip.com/2jcbqn.gif" title="made at imgflip.com"/></a>
+<a href="https://imgflip.com/gif/2jozug"><img src="https://i.imgflip.com/2jozug.gif" title="made at imgflip.com"/></a>
 
 ## Notes
 
-Getting the images to load using the alamofireimage library was a bit challenging.
+Implementing the zoom in feature was a little challenging.
 
 ## License
 
